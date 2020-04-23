@@ -1,0 +1,18 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+//BOX SHADOWS
+@mixin shadow-1 {
+    box-shadow: 0   2rem    2rem    rgba($color-black, $alpha: 0.2);
+}
+@mixin shadow-2 {
+    box-shadow: 0   2rem    4rem    rgba($color-black, $alpha: 0.4);
+}
+@mixin shadow-3 {
+    box-shadow: 0   2rem    4rem    rgba($color-black, $alpha: 0.6);
+}
+
