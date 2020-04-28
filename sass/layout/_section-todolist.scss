@@ -1,0 +1,5 @@
+.todolist {
+    background-color: $color-secondary-2;
+    border-radius: 1.5rem;
+    @include shadow-1;
+}

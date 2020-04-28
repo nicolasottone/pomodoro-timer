@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title u-center">
+            Pomodoro
+        </h1>
+    <div class="header__logobox">
+        <img src="img/target.png" alt="logo" class="header__logo">
+        <p class="header__logotext">Stay focus!</p>
+    </div>
+    </header>
+    <section class="set">
+        <div class="setting">
+                <div class="setting__radiobox radiobox">
+                    <div class="radiobox__item">
+                        <input type="radio" name="mode" id="semi" class="radiobox__input">
+                        <label for="semi" class="radiobox__text">SEMI</label>
+                    </div>
+                    <div class="radiobox__item">
+                        <input type="radio" name="mode" id="auto" class="radiobox__input">
+                        <label for="auto" class="radiobox__text">AUTO</label>
+                    </div>
+                    <div class="radiobox__item">
+                        <input type="radio" name="mode" id="manual" class="radiobox__input">
+                        <label for="manual" class="radiobox__text">MANUAL</label>
+                    </div>
+                </div>
+                <!--
+                <div class="setting__task">
+                    <select name="task" id="" class="select">
+                        <option class="select__opt" value="default">Default</option>
+                        <option class="select__opt" value="task-1">task 1</option>
+                        <option class="select__opt" value="task-2">task-2</option>
+                    </select>
+                </div>
+                -->
+                <div class="setting__timeset">
+                    <div class="intext">
+                        <input placeholder="MM:SS" type="text"  id="time" class="intext__in">
+                        <label for="time" class="intext__label">Time set:</label>
+                    </div>
+                    <div class="intext">
+                        <input placeholder="N" type="text"  id="repeat" class="intext__in">
+                        <label for="repeat" class="intext__label intext__label--int">Repeat</label>
+                    </div>
+                </div>
+                <div class="setting__timebreak  setting__timebreak--short">
+                    <div class="intext">
+                        <input placeholder="MM:SS" type="text"  id="short" class="intext__in">
+                        <label for="short" class="intext__label">Short:</label>
+                    </div>
+                </div>
+                <div class="setting__timebreak setting__timebreak--large">
+                    <div class="intext">
+                        <input placeholder="MM:SS" type="text"  id="large" class="intext__in">
+                        <label for="large" class="intext__label">Large:</label>
+                    </div>
+                </div>
+                <div class="setting__start">
+                    <a href="#" class="btn btn--start">START</a>
+                </div>
+        </div>
+         <div class="display">
+             <div class="display__imgbox mt-lg">
+                <img src="img/chronograph.png" alt="chronograph" class="display__img">
+            </div>
+                <span class="display__time">
+                    25:00
+                </span>
+                <p class="display__endtime">
+                    END TIME:&nbsp; <span class="display__endtime__number">22:00</span>&nbsp;HS
+                </p>
+           </div>
+    </section>
+    <section class="todolist">
+
+    </section>
+</body>
+</html>

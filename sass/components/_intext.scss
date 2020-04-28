@@ -1,0 +1,36 @@
+.intext {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    &__in {
+        width: 100%;
+        background-color: $color-secondary-2;
+        border: none;
+        outline: none;
+        padding: .7rem 1rem;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-size: $default;
+        @include shadow-inset-1;
+        border-radius: 1rem;
+        transition: all .3s ease;
+        &:focus {
+            @include shadow-3;
+            transform: scale(1.02);
+        }
+        &:placeholder-shown {
+            font-family: $primary-font;
+            
+        }
+
+    }
+    &__label {
+        font-family: $primary-font;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        &--int {
+            margin-left: 0.3rem;
+        }
+    }
+}

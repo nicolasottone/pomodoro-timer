@@ -1,0 +1,34 @@
+.header {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-1, 1), rgba($color-primary-2, 1));
+    border-radius: 1rem;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(min-content, 5fr) minmax(min-content, 15rem);
+
+    &__logobox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__logo {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 10rem;
+        height: 10rem;
+        display: inline-block;
+
+
+    }
+    &__logotext {
+        color: $color-white;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-size: $default;
+        display: inline-block;
+        margin-top: .5rem;
+    }
+    
+
+}

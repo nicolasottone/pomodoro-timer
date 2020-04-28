@@ -1,0 +1,23 @@
+.btn, .btn:link, .btn:visited {
+    display: inline-block;
+    font-family: $button-font;
+    @include shadow-2;
+    transition: all .2s;
+}
+.btn:active {
+    transform: translateY(.2rem);
+    @include shadow-3;
+}
+.btn--start, .btn--start:link, .btn--start:visited {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgba($color-primary-1, 0.9), rgba($color-primary-2, 1));
+    font-weight: bold;
+    font-size: 2rem;
+    color: $color-secondary-2;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

@@ -5,17 +5,22 @@
 
 //BASE
 @import "base/animations";
-@import "base/normalize";
 @import "base/setup";
 @import "base/typography";
 @import "base/utilities";
 
 //COMPONENTS
+@import "components/radiobox";
+@import "components/select";
+@import "components/intext";
+@import "components/btn";
+
 
 //LAYOUT
 @import "layout/header";
+@import "layout/section-set";
+@import "layout/section-todolist";
 @import "layout/main";
 @import "layout/footer";
 
 //PAGES
-@import "pages/home"

@@ -1,0 +1,33 @@
+.radiobox {
+    display: flex;
+    background-color: $color-secondary-1;
+    @include shadow-3;
+    border-radius: 2rem;
+    border: 5px solid  $color-secondary-1;
+    &__item {
+        flex-grow: 1;
+        width: 33%;
+        align-items: center;
+    }
+    &__input {
+        display: none;
+    }
+    &__text {
+        font-family: $primary-font;
+        background-color: $color-secondary-1;
+        display: block;
+        text-align: center;
+        font-size: inherit;
+        text-transform: uppercase;
+        font-weight: 300;
+        border-radius: 2rem;
+        padding: .5rem  .8rem;
+        cursor: pointer;
+        transition: all .2s ease;
+    }
+    & &__input:checked ~ &__text {
+        background-color: $color-secondary-2;
+        @include shadow-inset-1;
+        color: lightcoral;
+    }
+}
