@@ -4,12 +4,12 @@
   "description": "pomodoro",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss css/style-index.css -w",
     "devserver": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "compile:sass": "node-sass sass/main.scss css/style-index.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style-index.comp.css -o css/style-index.prefix.css",
+    "compress:css": "node-sass css/style-index.prefix.css css/style-index.css --output-style-index compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "N.O.",

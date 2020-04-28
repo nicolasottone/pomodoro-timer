@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Favi Black.png" sizes="16x16" type="image/png" id="favicon">
+    <title>Pomotimo timer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="pomodoro">
+            <div class="pomodoro__circle--small">
+
+            </div>
+            <div class="pomodoro__circle--big">
+                <div class="timer">00:00 </div>
+            </div>
+            <div class="buttons-box">
+                <div class="g0 button-on">
+                    <div class="btn btn-0"><a class="btn-a" href="#">Start</a></div>
+                    <!--<div class="btn btn-"><a class="btn-a" href="#">Stop</a></div>-->
+                </div>
+                <div class="g1 button-off">
+                    <!--<div class="btn btn-1"><a class="btn-a" href="#">Pause</a></div>-->
+                    <div class="btn btn-2"><a class="btn-a" href="#">Stop</a></div>
+                </div>
+                <div class="g2 button-off">
+                    <div class="btn btn-3"><a class="btn-a" href="#">Resume</a></div>
+                    <div class="btn btn-1"><a class="btn-a" href="#">pause</a></div>
+                </div>
+                <div class="g3 button-off">
+                    <div class="btn btn-1"><a class="btn-a" href="#">Pause</a></div>
+                    <div class="btn btn-4"><a class="btn-a" href="#">Skip</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="open-menu menu-display-1">
+            <a href="#"><img src="../img/settings.svg" alt="settings"></a>
+        </div>
+        <div class="menu off-screen">
+            <h2 class="header-2">Settings</h2>
+            <ul class="list">
+                <li class="setting">Pomodoro Time <span class="p"><input class="input pomodoro-time"
+                            type="number"></span>
+                </li>
+                <li class="setting">Rest Time <span class="inputi"><input class="input rest-time" type="number"></span>
+                </li>
+                <li class="setting">
+                    Manual Mode
+                    <label class="setting switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="btn btn-black menu-display-2"> <a class="btn-black-a" href="#">ready!</a></li>
+
+            </ul>
+        </div>
+        <audio class="woosh" src="../img/Woosh.wav"></audio>
+    </div>
+    <script src="../JS/app.js"></script>
+
+</body>
+
+</html>
